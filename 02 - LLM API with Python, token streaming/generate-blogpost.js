@@ -38,6 +38,8 @@ async function main() {
   try {
     const completion = await openai.chat.completions.create({
       model: "gpt-4o",
+      temperature: 0.2,
+      stream: true,
       messages: [
         { role: "system", content: 'You are an expert blog writer. When given transcript, create a well-structured blog post.' },
         {
@@ -45,13 +47,15 @@ async function main() {
           content: `
             Transcript: ${data}
             
-            Please write a detailed blog post using Transcript.
+            Please write a detailed blog post using Transcript and provide some quotes.
           `,
         },
       ],
     });
 
-    console.log("Response:", completion.choices[0].message.content);
+    for await (const chunk of completion) {
+      process.stdout.write(chunk.choices[0]?.delta?.content || "");
+  }
   } catch (error) {
     console.error("Error:", error);
   }
