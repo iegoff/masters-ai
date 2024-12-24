@@ -31,8 +31,5 @@ This repository contains a simple Node.js script that does the following:
 4. Navigate into the repository folder:
    ```bash
    node generate-blogpost.js
-
    OR
-
-   ```bash
    node generate-blogpost.js {TOKEN} {Transcript File}
