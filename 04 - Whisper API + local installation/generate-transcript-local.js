@@ -1,10 +1,8 @@
-require('dotenv').config();
 const readline = require("readline");
-const OpenAI = require("openai");
+const { spawn } = require("child_process");
 const fs = require('node:fs');
 const args = process.argv.slice(2);
-let audio = args[1];
-let apiKey = args[0] || process.env.OPENAI_API_KEY;
+let audio = args[0];
 
 
 function promptForInput(question) {
@@ -20,9 +18,6 @@ function promptForInput(question) {
   });
 }
 async function main() {
-  if (!apiKey) {
-    apiKey = await promptForInput("Please enter your OpenAI API key: ");
-  }
   if (!audio) {
     audio = await promptForInput("Please provide recording: (default: rec.mp3) ");
 
@@ -30,20 +25,28 @@ async function main() {
       audio = 'rec.mp3';
     }
   }
-  const openai = new OpenAI({
-    apiKey: apiKey
-  });
+
 
   try {
-    const transcription = await openai.audio.transcriptions.create({
-      file: fs.createReadStream(audio),
-      model: "whisper-1",
-      language: "en",
-      temperature: 0,
+    return new Promise((resolve, reject) => {
+      const child = spawn("whisper", [
+        audio,
+        "--model", "base",
+        "--output_format", "txt",
+        "--language", "en"
+      ]);
+      child.stdout.on("data", (data) => {
+        console.log(`STDOUT: ${data}`);
+      });
+      child.stderr.on("data", (data) => {
+        console.error(`STDERR: ${data}`);
+      });
+      child.on("close", (code) => {
+        if (code !== 0) {
+          reject(new Error(`Whisper process exited with code ${code}`));
+        }
+      });
     });
-
-    console.log(transcription.text);
-
   } catch (error) {
     console.error("Error:", error);
   }

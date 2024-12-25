@@ -1,0 +1,18 @@
+The good news, good news, we are on track right and here, here we are meeting number five,
+so today we're going to discuss with the API and local installation.
+The bad news, I took a look at some of the Chromeworks like two or three maybe five but not
+like very very high level. I like the blog posts you guys made so I like the pictures and I think
+I will share some of my favorite pictures next time, so I assume I will need this weekend to check
+them and probably to add in the like set some marks or something like that, so just give me some time
+but I haven't found any like critical problems there, so just remember to share the workflow,
+how you how you did that like for the first task, so I need to see like what prompts you've been
+using and don't forget about the pictures, so the pictures are necessary for our blog posts.
+So I think we're going to focus on that probably either on this lecture or this one,
+we're going to have time to review the Chromeworks, but today we're going to discuss with this
+API and this is very, let me show this slide, so here are the slides for today,
+so what is the visper and why we're discussing that, so mostly when people
+discuss the Generative AI or AI in general, so a focus stone like LLAMs,
+I know like Cappalats, Functions and stuff like that, so everything that works with text,
+right, because it has more application to the business when you work with text, but still
+usually what is being forgotten is images and audio processing can't,
+getting the images I can't see.

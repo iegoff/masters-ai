@@ -18,7 +18,7 @@ This repository contains a simple Node.js script that does the following:
 
 ---
 
-## Getting Started
+## Getting Started 
 
 1. **Clone** or **download** this repository.
 
@@ -28,8 +28,14 @@ This repository contains a simple Node.js script that does the following:
 3. Navigate into the repository folder:
    ```bash
    npm install
-4. Navigate into the repository folder:
+4. Online mode:
    ```bash
    node generate-transcript.js
    OR
-   node generate-transcript.js {TOKEN} {Transcript File}
+   node generate-transcript.js {TOKEN} {Audio File}
+
+5. Local mode (Pre installed whisper required):
+   ```bash
+   node generate-transcript-local.js
+   OR
+   node generate-transcript-local.js {Audio File}
