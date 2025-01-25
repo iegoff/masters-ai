@@ -1,1 +1,2 @@
-# masters-ai
+## Capstone streamlit UI
+![CapstoneUI](streamlit.png)
