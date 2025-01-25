@@ -37,3 +37,5 @@ This repository contains a simple Node.js script that does the following:
     ```
    node call-function.js {TOKEN} "{prompt}"
     ```
+## Example
+![Example](example.png)
