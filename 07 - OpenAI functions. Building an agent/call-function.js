@@ -13,6 +13,7 @@ const database_schema_string = `
 Table: transactions
 Columns: transaction_id, prop_group, is_offplan, prop_usage, prop_area, prop_type, prop_sb_type, prop_price, prop_area_sqf, prop_rooms, project_name 
 All colums are of type TEXT
+Example row: 102-1-2025,	Sales Off-Plan,	Residential,	Wadi Al Safa 4,	Unit,	Flat,	1421000,	68.67, 1 B/R, Lacina
 `
 
 const tools = [{
