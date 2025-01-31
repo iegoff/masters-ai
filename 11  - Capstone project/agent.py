@@ -12,6 +12,10 @@ from requests.adapters import HTTPAdapter
 from urllib3.util import Retry
 import matplotlib.pyplot as plt
 
+st.set_page_config(
+        page_title='Dubai Properties Transactions',
+        page_icon="🏘️"                  
+        )
 retry_strategy = Retry(
     total=4,  # maximum number of retries
     backoff_factor=1,

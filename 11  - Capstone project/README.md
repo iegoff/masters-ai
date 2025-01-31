@@ -3,7 +3,7 @@
 ![CapstoneUI](streamlit.png)
 ## Overview
 This project is a **Streamlit-based AI-powered assistant** designed to retrieve and analyze **Dubai real estate transactions** using public data from the **Dubai Land Department**. The application also fetches **currency exchange rates for AED** and provides insights into property transactions via an interactive dashboard.
-
+ [🚀Demo is here](https://dubiprop.streamlit.app/)
 ## Features
 - **Fetch Dubai Property Transactions** from an official API
 - **Retrieve Exchange Rates** for AED to other currencies
