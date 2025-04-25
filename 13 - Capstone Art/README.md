@@ -1,4 +1,4 @@
-# Alternative Cover Project – **Pink Floyd – *The Dark Side of the Moon***
+# Alternative Cover Project***
 
 ---
 
@@ -27,17 +27,18 @@
 | **Seed** | `randomized` |
 | **Resolution** | `1024 × 1024` |
 | **Batch size** | `4` |
-| **Prompt** | ```
+| **Prompt** | 
+```
 vintage red book cover, black and white ink illustration of a detective in tweed coat and deerstalker hat, smoking a curved pipe, serious expression, classic 19th-century style, dramatic lighting, bold serif typography, yellow and white text layout, traditional literary style, textured background, slight book wear and tear for realism
 sherlock holmes by arthur conan doyle
-``` |
+```
 | ```
 dramatic grayscale poster, close-up of a serious older man with slicked-back hair and tuxedo, puppet master hand, above vintage text The Godfather, mafia crime theme, 1940s black car with bullet holes, lifeless body on pavement, soft light, cinematic depth, movie poster style, high contrast, classic mafia atmosphere, VHS, textured background
 ``` |
 | ```
 vintage red book cover, black and white ink illustration of a detective in tweed coat and deerstalker hat, smoking a curved pipe, serious expression, classic 19th-century style, dramatic lighting, bold serif typography, yellow and white text layout, traditional literary style, textured background, slight book wear and tear for realism
 sherlock holmes by arthur conan doyle
-``` |
+``` 
 
 </details>
 ![Alt Cover A](assets/screenshot.png)
