@@ -1,4 +1,4 @@
-# Alternative Cover Project***
+# Alternative Cover Project
 
 ---
 
